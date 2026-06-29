@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Rediriger toutes les requêtes vers le dossier /public
+    # (utile en production lorsque la racine du domaine pointe
+    #  sur la racine du projet et non sur /public)
+    RewriteRule ^(\.well-known/.*)$ $1 [L]
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
