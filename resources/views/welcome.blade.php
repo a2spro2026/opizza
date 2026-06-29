@@ -38,13 +38,13 @@
         @endforeach
     </div>
 
-    <style>
+            <style>
         .opz-star{position:absolute;border-radius:9999px;background:#fff;box-shadow:0 0 6px 1px rgba(255,255,255,.85);opacity:.3;animation-name:opzTwinkle;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
         .opz-sparkle{position:absolute;color:rgba(253,210,140,.95);filter:drop-shadow(0 0 6px rgba(249,115,22,.65));opacity:.5;animation:opzSparkle 4.5s ease-in-out infinite}
         @keyframes opzTwinkle{0%,100%{opacity:.2;transform:scale(.6)}50%{opacity:1;transform:scale(1.2)}}
         @keyframes opzSparkle{0%,100%{opacity:.25;transform:scale(.75) rotate(0deg)}50%{opacity:1;transform:scale(1.15) rotate(25deg)}}
         @media (prefers-reduced-motion: reduce){.opz-star,.opz-sparkle{animation:none;opacity:.6}}
-    </style>
+            </style>
 
     {{-- Contenu centré --}}
     <main class="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-12 text-center">
@@ -58,7 +58,7 @@
             <span class="relative inline-block mt-2 text-7xl sm:text-9xl">
                 <span class="absolute inset-0 bg-gradient-to-r from-brand-400 via-amber-300 to-brand-500 bg-clip-text text-transparent blur-2xl opacity-60" aria-hidden="true">O'pizza</span>
                 <span class="relative bg-gradient-to-r from-brand-300 via-amber-200 to-brand-400 bg-clip-text text-transparent drop-shadow-[0_4px_30px_rgba(249,115,22,0.45)]">O'pizza</span>
-            </span>
+                                </span>
         </h1>
 
         <p class="mt-7 max-w-2xl text-base sm:text-lg leading-relaxed text-white/85">
@@ -75,9 +75,9 @@
                 <span class="relative flex items-center gap-3 tracking-wide">
                     Accéder à ma session
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </span>
+                            </span>
             </a>
+                </div>
+            </main>
         </div>
-    </main>
-</div>
 @endsection
